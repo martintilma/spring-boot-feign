@@ -1,0 +1,34 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
+
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>AxonFramework contributors:(#: <span th:remove="tag" th:text=" ${contributors.size}"></span>) </h1>
+</div>
+
+
+<div class="container">
+<div class="contributors">
+
+    <div class="contributor" th:each="contributor: ${contributors}">
+        <img src="" th:src="${contributor.avatar_url}" th:alt="${contributor.login}" />
+        <span class="login" th:text="${contributor.login}"></span>
+
+    </div>
+
+
+</div>
+</div>
+
+<script type="text/javascript" src="webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

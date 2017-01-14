@@ -1,0 +1,10 @@
+.contributor {
+    width: 200px;
+    display:inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+.contributor img {
+    width: 200px;
+}
