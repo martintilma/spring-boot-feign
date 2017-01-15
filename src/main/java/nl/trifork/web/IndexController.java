@@ -25,9 +25,7 @@ public class IndexController {
     @RequestMapping(value = "/")
     public String index(Model model) {
 
-        List<Contributor> contributors = gitHub.contributors("AxonFramework", "AxonFramework");
-        Collections.sort(contributors);
-        model.addAttribute("contributors", contributors);
+        model.addAttribute("contributors", gitHub.contributors("AxonFramework", "AxonFramework"));
 
         return "index";
     }
