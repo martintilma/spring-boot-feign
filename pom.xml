@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>nl.trifork</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>spring-boot-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>demo</name>
+    <name>spring-boot-feign</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
