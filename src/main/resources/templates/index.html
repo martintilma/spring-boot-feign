@@ -1,6 +1,6 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>demo</title>
+    <title>spring-boot-feign</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css" />
@@ -10,7 +10,7 @@
 <body>
 
 <div class="jumbotron text-center">
-    <h1>AxonFramework contributors:(#: <span th:remove="tag" th:text=" ${contributors.size}"></span>) </h1>
+    <h1>AxonFramework contributors:(#: <span th:remove="tag" th:text=" ${contributors.size()}"></span>) </h1>
 </div>
 
 
